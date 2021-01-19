@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(125, 199, 218);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile{
+    margin: 50px 0;
+    background-color: #fff;
+    width: 500px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+.header{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.header .search {
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.header .search::placeholder{
+    padding-left: 5px;
+    color: #ccc;
+}
+
+.header .search:focus{
+    border: 0;
+    box-shadow: 0 0 5px rgb(81, 207, 81);
+}
+
+.search__btn {
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color:  rgb(24, 228, 24);
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: .3s ease-in;
+}
+.search__btn:hover{
+    box-shadow: 0 0 3px rgb(24, 228, 24);;
+    background-color: transparent;
+    color:  rgb(24, 228, 24);;
+}
+.fav__meals h3 {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    background-color:rgb(167, 107, 223);
+    color: white;
+}
+
+.fav__row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background-color: rgb(167, 107, 223);
+}
+
+.fav__item{
+    position: relative;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 10px;
+    text-align: center;
+    color: #fff;
+}
+.fav__item .fav__item-close{
+    position: absolute;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.fav__item .fav__item-close:hover{
+    transform: rotate(90deg);
+}
+
+.fav__item img {
+    padding: 5px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid rgb(212, 205, 205);
+    box-shadow: 0 1px 5px rgb(219, 219, 219);
+  
+    
+}
+.fav__item span {
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+}
+
+.meals {
+    padding: 10px;
+}
+.meal__card{
+    border: 1px solid rgb(224, 224, 224);
+    padding: 15px;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 15px 0 15px 0;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.meal__card:hover{
+    box-shadow: 0 1px 10px rgb(170, 63, 189);
+    
+}
+
+.meal__card img {
+    cursor: pointer;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.random__recipe{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.835);
+    padding: 5px ;
+    border-radius: 0 0 15px 0;
+    font-weight: bold;
+
+}
+
+.meal__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.meal__info .fav__btn {
+    font-size: 24px;
+    color: rgb(156, 156, 156);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    transition: .3s ease-in;
+}
+
+.meal__info .fav__btn.active{
+    color: rgb(190, 74, 190);
+}
+.meal__info .fav__btn:hover{
+    transform: scale(1.3);
+}
+
+.no {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* popup */
+.popup{
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+.close__popup{
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+.meal__popup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}

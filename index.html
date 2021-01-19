@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipes app</title>
+</head>
+<body>
+    <!-- Общая обёртка -->
+    <div class="mobile">
+        <!-- поиск header  -->
+        <form class="form">
+            <input 
+                type="text"
+                class='search'
+                placeholder="search meal"
+            >
+            <button 
+                class="search__btn"
+            >
+                Search
+            </button>
+        </form>
+        
+        <!-- Обёртка для любимых блюдь -->
+        <div class="fav__meals">
+            <h3>Favourite meals</h3>
+            <div class="fav__row">
+            </div>
+        </div>
+
+        <!-- обёртка для блюдь -->
+        <div class="meals">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
