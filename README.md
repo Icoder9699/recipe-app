@@ -1,4 +1,13 @@
 # recipe-app
-#link to demo : https://icoder9699.github.io/recipe-app/.
-recipe-app using by mealDB API
-In this small project I used vanilla JS. Here you can find meals, search , like save to favorite meals else find out interesting information about meals that you clicked! =)
+recipe-app using mealDB API
+In this small project I used vanilla JS. 
+</br>Here you can find meals, search , like and save to favorite meals 
+</br>else find out interesting information about meals that you clicked! =)
+demo : https://icoder9699.github.io/recipe-app/.
+
+#russian 
+Приложения рецепт с помощью mealDB APi
+</br> Это приложения полностью создана на чистов JS.
+</br>Здесь вы можете лайкать, искать, и сохранить любимые блюда в favorite meals.
+</br> И при клике карточек можно увидеть дополнительную информацию о блюде.
+
